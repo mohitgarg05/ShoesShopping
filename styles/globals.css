@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
+html body{
+  font-family: 'Water Brush', cursive;
+}
+.row{
+  width: 100%;
+}
+
+.bg_image{
+
+  height:730px;
+  max-width: 100%;
+  background-image: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920/enUS/Images/running-ss22-ultraboost-educate-catlp-masthead-large-2-d_tcm221-860848.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.search_bar input:focus{
+  outline: none;
+}
+
+input[type=text]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+
+
+  
+.bg_image1{
+  height:745px;
+  background-image: url("https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_1419,c_limit/42dc3c9a-ba1d-4f16-8fed-7bc5b2cf1816/jordan.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+}
+
+
+
+  
+.bg_image3{
+  
+  height:730px;
+  max-width: 100%;
+  background-image: url("https://media.istockphoto.com/photos/part-of-grey-sports-sneakers-on-a-white-background-adidas-picture-id1340203873?b=1&k=20&m=1340203873&s=170667a&w=0&h=nUYBHJYIqfvZXUW2UWA-nF1FAwHZ5ZmQeK-0IMuaFw0=");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+}
+
+
+
+
+  
+.bg_image9{
+  height:730px;
+  max-width: 100%;
+  background-image: url("https://content.shop4reebok.com/static/hero/Floatride_Energy_4_250322_1920x800.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+}
+
+.card{
+  /* box-shadow: 3px 3px 10px rgba(0, 0, 0, .1); */
+  overflow: hidden;
+  border: none;
+
+}
+
+.card .card_image{
+  transition: transform .75s;
+}
+
+.card:hover .card_image{
+  transform: scale(1.15);
+}
