@@ -1,6 +1,7 @@
 import React , {useState , useEffect} from 'react'
 import axios from 'axios';
-import path from './apiPath/path'
+import path from '../apiPath/path'
+
 import Link from 'next/link'
 import Footer from './footer/footer'
 
@@ -75,14 +76,4 @@ const MainPage = (props) => {
 
 export default MainPage;
 
-export async function getStaticProps() {
-  const res = await axios.get(path+"amoamy");
-  const res2 = res.data.slice(0,10);
-  
 
-  return {
-      props: {
-        res2
-      }
-  }
-}

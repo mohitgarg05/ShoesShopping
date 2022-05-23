@@ -1,7 +1,7 @@
 import React,{useEffect,useState} from 'react'
 import axios from 'axios'
 import Footer from '../footer/footer'
-import path from '../apiPath/path'
+import path from '../../apiPath/path'
 const ProductId = ({send_lustmexico , send_amoamy , send_twofeetundr}) => {
 
     const [Lustmexico, setLustmexico] = useState([]);

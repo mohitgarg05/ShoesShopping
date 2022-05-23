@@ -1,11 +1,11 @@
 import axios from 'axios';
 import React,{useState,useEffect} from 'react'
-import path from './apiPath/path'
+import path from '../apiPath/path'
 import Link from 'next/link'
 const SearchedProduct = (props) => {
   return (
     <div className='row'>
-      {props.filter.map((items ,key)=>{
+      {props.filter?.map((items ,key)=>{
         return(
                 <div className= 'card col-md-3' key={key} >
                     <div className='p-3 ' >

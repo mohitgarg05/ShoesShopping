@@ -1,6 +1,6 @@
 import React,{useState,useEffect}  from 'react'
 import axios from 'axios';
-import path from './apiPath/path'
+import path from '../apiPath/path'
 
 import MainPage from './MainPage'
 import SearchedProduct from './SearchedProduct'
