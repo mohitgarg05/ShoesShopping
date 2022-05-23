@@ -11,7 +11,7 @@ const SearchedProduct = (props) => {
                     <div className='p-3 ' >
                         <img alt='not found' className='card_image w-96 h-96' src={items.image1}  />
                     </div>
-                    <div className='p-3 text-xl' >
+                    <div className='p-3 text-xl'>
                         <h3>{items.title}</h3>
                     </div>
                     <div className='p-3 '>
