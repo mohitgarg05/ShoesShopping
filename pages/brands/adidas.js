@@ -5,22 +5,10 @@ import Footer from '../footer/footer'
 import Link from 'next/link'
 
 const Adidas = ({res2}) => {
-    const [Visible, setVisible] = useState(19);
-    const [AdidasShoes, setAdidasShoes] = useState([]);
+    const [Visible, setVisible] = useState(18);
+    
 
-    const gettingData = async()=>{
-
-        const res = await axios.get(path+"brand/adidas");
-        const r = res.data.slice(10);
-        setAdidasShoes(r);
-
-    }
-
-    useEffect(  () => {
-
-        gettingData();
-        
-     }, [])
+   
 
     const handleClick = ((e)=>{
         e.preventDefault();
@@ -143,7 +131,7 @@ const Adidas = ({res2}) => {
                     <h1 className='text-5xl mt-20 mb-4 tracking-wider pl-5 font-semibold'>ALL PRODUCTS</h1>
                 </div>
                 
-                    {AdidasShoes.slice(1, Visible).map((items)=>{
+                    {res2.slice(9 , Visible).map((items)=>{
                            return(
                                <>
                                <div className='card col-md-4 justify-between px-5  py-8'>
@@ -188,7 +176,7 @@ export default Adidas;
 
 export async function getStaticProps() {
     const res = await axios.get(path+"brand/adidas");
-    const res2 = res.data.slice(0,12);
+    const res2 = res.data;
     
   
     return {
